@@ -48,6 +48,17 @@ body p {
 
 /* layout HEADER AND FOOTER */
 
+/* affects the header title */
+.header {
+  font-size: 36px;
+}
+
+/* affects the logo  */
+.header img {
+  height: 100px;
+
+}
+
 .footer {
   grid-area: footer;
   background-color: var(--footer);
@@ -87,18 +98,34 @@ body p {
     background-color: var(--sidenav);
 }
 
-.sidenav__list {
+.sidenavsearch {
+  /* padding: 10%; */
+  text-align: center;
+  padding: 30px;
+}
+
+.sidenavsearch button img {
+  height: 15px;
+  border-radius: 5px;
+}
+
+.search-bar {
+  height: 30px;
+  border-radius: 5px;
+}
+
+.sidenav_list {
     padding: 0;
     margin-top: 85px;
     list-style-type: none;
   }
 
-  .sidenav__list-item {
+  .sidenav_list-item {
     padding: 20px 20px 20px 40px;
     color: #ddd;
   }
 
-  .sidenav__list-item:hover {
+  .sidenav_list-item:hover {
     background-color: rgba(255, 255, 255, 0.774);
     cursor: pointer;
   }
