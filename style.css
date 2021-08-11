@@ -50,12 +50,15 @@ body p {
 
 /* affects the header title */
 .header {
-  font-size: 36px;
+  grid-area: header;
+  background-color: var(--header);
+  font-size: 16px;
 }
+
 
 /* affects the logo  */
 .header img {
-  height: 100px;
+  height: 5.5em;
 
 }
 
@@ -84,10 +87,6 @@ body p {
   height: 100vh;
 }
 
-.header {
-    grid-area: header;
-    background-color: var(--header);
-}
 
 /* sidebar with search function area  */
   
@@ -105,7 +104,8 @@ body p {
 }
 
 .sidenavsearch button img {
-  height: 15px;
+  height: 1.5em;
+  width: 1.5em;
   border-radius: 5px;
 }
 

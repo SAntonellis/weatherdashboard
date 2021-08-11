@@ -10,7 +10,7 @@
     
     <div class="grid-container">
         <header class="header">
-            <div class="header_title">Weather Dashboard</div>
+            <div class="header_title"><h1>Weather Dashboard</h1></div>
             <div class="header_logo"><img src="/amcharts_weather_icons_1.0.0/static/day.svg" alt=""></div>
           </header>
           
@@ -40,11 +40,24 @@
           
         <main class="main">
 
-          <div class="main-header">
-            <div class="main-header_heading"><h1>Heading</h1></div>
-            <div class="main-header_updates"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam doloribus inventore dignissimos eos officia ea ipsam quasi corrupti quae sunt minus, nesciunt in vel laudantium quia? Quis, aspernatur molestias.</p></div>
+          <!-- API PULL SHOWS HERE  -->
+          <div class="main-cards">
+            <div class="card">
+              <weather class="class">
+                <h2 class="city">Weather in CITY</h2>
+                <div class="temp">51 Degrees</div>
+                <img src="/amcharts_weather_icons_1.0.0/static/rainy-1.svg" alt="" class="icon">
+                <div class="description">Raining</div>
+                <div class="humidity">Humidity 40%</div>
+                <div class="wind">Wind speed </div>
+              </weather>
+            </div>
+            <div class="card"><h1>Heading</h1></div>
+            <div class="card"><h1>Heading</h1></div>
           </div>
-        
+          <!-- API PULL SHOWS HERE  -->
+
+
           <div class="main-overview">
             <div class="overviewcard">
               <div class="overviewcard_icon"><h1>Heading</h1></div>
@@ -64,11 +77,15 @@
             </div>
           </div>
 
-          <div class="main-cards">
-            <div class="card"><h1>Heading</h1></div>
-            <div class="card"><h1>Heading</h1></div>
-            <div class="card"><h1>Heading</h1></div>
-          </div>
+          
+
+          <div class="main-header">
+              <div class="main-header_heading"><h1>placeholder</h1>
+              </div>
+
+                <div class="main-header_updates"><p>this is where API will populate the information</p>
+                </div>
+        </div>
 
         </main> 
 
