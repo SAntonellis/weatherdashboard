@@ -118,10 +118,11 @@ body p {
     padding: 0;
     margin-top: 85px;
     list-style-type: none;
+    text-align: center;
   }
 
   .sidenav_list-item {
-    padding: 20px 20px 20px 40px;
+    padding: 20px 0px 20px 0px;
     color: #ddd;
   }
 
