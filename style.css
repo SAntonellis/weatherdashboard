@@ -15,6 +15,8 @@ font-family: 'Raleway', sans-serif;
     --footer: #b4cfe7;
 }
 
+/* large scale changes */
+
 * {
     box-sizing: border-box;
   }
@@ -43,6 +45,23 @@ body p {
     font-size: 1em;
   }
 
+
+/* layout HEADER AND FOOTER */
+
+.footer {
+  grid-area: footer;
+  background-color: var(--footer);
+}
+
+.header, .footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+/* rest of layout */
+
 .grid-container {
   display: grid;
   grid-template-columns: 240px 1fr;
@@ -58,6 +77,8 @@ body p {
     grid-area: header;
     background-color: var(--header);
 }
+
+/* sidebar with search function area  */
   
 .sidenav {
     display: flex; /* Will be hidden on mobile */
@@ -82,6 +103,12 @@ body p {
     cursor: pointer;
   }
   
+/* sidebar end */
+
+
+
+/* main heading section  */
+
 .main {
     grid-area: main;
     background-color: var(--beau-blue);
@@ -105,6 +132,19 @@ body p {
     grid-gap: 20px;
     margin: 20px;
   }
+
+  /* row of cards under heading  */
+
+  .overviewcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(171, 224, 224, 0.739);
+    border-radius: 5px;
+  }
+
+  /* three larger blue cards at bottom with  headings  */
   
   .main-cards {
     column-count: 2;
@@ -125,7 +165,7 @@ body p {
     border-radius: 5px;
   }
 
-  /* Force varying heights to simulate dynamic content */
+  /* Force varying heights to match on the three bottom cards */
   .card:first-child {
     height: 485px;
   }
@@ -138,25 +178,8 @@ body p {
     height: 265px;
   }
 
-  .overviewcard {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: rgba(171, 224, 224, 0.739);
-    border-radius: 5px;
-  }
 
-.footer {
-    grid-area: footer;
-    background-color: var(--footer);
-}
 
-.header, .footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-  }
+
 
   
