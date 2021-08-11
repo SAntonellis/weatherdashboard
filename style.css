@@ -34,7 +34,7 @@ body {
     font-size:20px;
 }
 
-body h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -78,7 +78,7 @@ body p {
   }
 
   .sidenav__list-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.774);
     cursor: pointer;
   }
   
@@ -121,6 +121,7 @@ body p {
     -webkit-column-break-inside: avoid;
     padding: 24px;
     box-sizing: border-box;
+    border-radius: 5px;
   }
 
   /* Force varying heights to simulate dynamic content */
@@ -141,7 +142,7 @@ body p {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #d3d3;
+    background-color: rgba(171, 224, 224, 0.739);
   }
 
 .footer {
