@@ -95,6 +95,7 @@ body p {
     height: 150px; /* Force height */
     background-color: #e3e4e6;
     color: slategray;
+    border-radius: 5px;
   }
 
   .main-overview {
@@ -143,6 +144,7 @@ body p {
     justify-content: space-between;
     padding: 20px;
     background-color: rgba(171, 224, 224, 0.739);
+    border-radius: 5px;
   }
 
 .footer {
