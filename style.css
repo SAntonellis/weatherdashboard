@@ -210,4 +210,8 @@ body p {
 
 
 
-  
+/* content */
+
+.description {
+  text-transform: capitalize;
+}
