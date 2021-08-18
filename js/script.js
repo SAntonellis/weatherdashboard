@@ -10,7 +10,7 @@ fetchWeather: function (city) {
         .then((data) => console.log(data));
     },
     displayWeather: function(data) {
-        
+        const { name } = data;
     }
 };
 
