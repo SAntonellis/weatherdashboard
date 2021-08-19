@@ -25,7 +25,7 @@ fetchWeather: function (city) {
         document.querySelector(".description").innerText = description;
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " m/ph";
-        document.querySelector(".weathernone").classList.remove("weathernone");
+        document.querySelector(".weather").classList.remove("weather");
     },
 
 

@@ -231,12 +231,12 @@ body p {
   align-items: center;
 }
 
-.weathernone {
+.weather {
   visibility: hidden;
   max-height: 20px;
 }
 
-.weathernone::after {
+.weather::after {
   visibility: visible;
   /* content:url(/assets/icons/userinterface/006-brightness.svg); */
 }
