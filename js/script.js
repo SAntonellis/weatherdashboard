@@ -1,3 +1,5 @@
+// main forecast
+
 let weather = {
     apiKey: "5a1bf8388be4d30bb8e08bbbe2e40c87",
 fetchWeather: function (city) {
@@ -18,14 +20,39 @@ fetchWeather: function (city) {
         console.log(name,icon,description,temp,humidity,speed)
         document.querySelector(".city").innerText = "Weather in " + name + ",";
         document.querySelector(".country").innerText = country;
-        document.querySelector(".temp").innerText = "Temp: " + temp + "°F";
+        document.querySelector(".temp").innerText = temp + "°F";
         document.querySelector(".icon").src = "http://openweathermap.org/img/wn/" + icon + ".png";
-        document.querySelector(".description").innerText = "Current conditions: " + description;
+        document.querySelector(".description").innerText = description;
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
         document.querySelector(".wind").innerText = "Wind speed: " + speed + " m/ph";
-    }
+        document.querySelector(".weathernone").classList.remove("weathernone");
+    },
+
+
+
+
+
+
+
+// adding search function
+search: function() {
+    this.fetchWeather(document.querySelector(".search-bar").value);
+}
+
 };
 
 
 
-weather.fetchWeather("wellington")
+document.querySelector(".button").addEventListener("click", function() {
+    weather.search();
+});
+
+    //making it search on hitting enter
+document.querySelector(".search-bar").addEventListener("keyup", function(event) {
+    if (event.key == "Enter") {
+        weather.search();
+    }
+  
+});
+
+
